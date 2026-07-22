@@ -49,12 +49,12 @@ const Header: React.FC = () => {
                     {/* navbar end */}
                     <div className="flex-none self-end">
                         {/* hidden on mobile, show on desktop */}
-                        <ul className={`menu menu-horizontal hidden md:flex space-x-7.5 text-base font-semibold ${inter.className}`}>
+                        <ul className={`menu menu-horizontal hidden md:flex space-x-7.5 text-primary-content text-base font-semibold ${inter.className}`}>
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/">Services</Link></li>
                             <li><Link href="/about">About</Link></li>
                             <li>
-                                <Link href="/" className="btn btn-primary text-secondary-content rounded-full"><PiPhoneLight className="size-6" />Contact Us</Link>
+                                <Link href="/" className="btn btn-primary text-primary-content rounded-full"><PiPhoneLight className="size-6" />Contact Us</Link>
                             </li>
                         </ul>
 
@@ -69,10 +69,10 @@ const Header: React.FC = () => {
                                 </DrawerTrigger>
                                 <DrawerContent className={`pt-14 ${inter.className}`}>
                                     <div className="flex flex-col py-12 bg-neutral text-base px-4.5 rounded-3xl">
-                                        <ul className="flex flex-col space-y-11">
+                                        <ul className="flex flex-col text-neutral-content space-y-11">
                                             <li><Link href={"/"}>Home</Link></li>
                                             <li><Link href={"/about"}>About</Link></li>
-                                            <li className="flex justify-center"><Link href={"/contact"} className="btn btn-primary w-full text-secondary-content rounded-full">Contact Us</Link></li>
+                                            <li className="flex justify-center"><Link href={"/contact"} className="btn btn-primary w-full text-primary-content rounded-full">Contact Us</Link></li>
                                         </ul>
                                     </div>
                                 </DrawerContent>
