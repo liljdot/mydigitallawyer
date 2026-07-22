@@ -5,9 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { PiPhoneLight } from "react-icons/pi";
 import { Button, Drawer, DrawerContent, DrawerTrigger } from "../ui";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
+import { usePathname } from "next/navigation";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -16,11 +17,23 @@ const inter = Inter({
 })
 
 const Header: React.FC = () => {
+    const [scrollY, setScrollY] = useState(0);
     const [sandwichOpen, setSandwichOpen] = useState(false)
+    const pathname = usePathname()
+
+    useEffect(() => {
+        const listenerFn = () => {
+            setScrollY(window.scrollY)
+        }
+
+        window.addEventListener("scroll", listenerFn)
+
+        return () => window.removeEventListener("scroll", listenerFn)
+    }, [setScrollY])
 
     return (
         <>
-            <header className="fixed flex w-full z-52">
+            <header className={`fixed flex w-full z-52 ${sandwichOpen ? "bg-neutral" : scrollY < 50 ? "bg-transparent" : "bg-neutral/70 backdrop-blur-xs"}`}>
                 <div className="navbar px-5 md:px-25">
                     {/* navbar start */}
                     <div className="flex-1">
@@ -47,7 +60,7 @@ const Header: React.FC = () => {
 
                         {/* show on mobile, hidden on desktop */}
                         <div className="flex md:hidden">
-                            <Drawer swipeDirection="up" onOpenChange={setSandwichOpen}>
+                            <Drawer key={pathname} swipeDirection="up" onOpenChange={setSandwichOpen}>
                                 <DrawerTrigger
                                     render={<Button variant="ghost" />}
                                 >
