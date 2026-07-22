@@ -4,6 +4,49 @@
 
 @custom-variant dark (&:is(.dark *));
 @plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "vitaminedark";
+  default: true; /* set as default */
+  prefersdark: true; /* set as default dark mode (prefers-color-scheme:dark) */
+  color-scheme: dark; /* color of browser-provided UI */
+
+  --color-base-100: #222222;
+  --color-base-200: #272727;
+  --color-base-300: #303030;
+  --color-base-content: #FFFFFF;
+  --color-primary: #FF6A0F;
+  --color-primary-content: #000000;
+  --color-secondary: #1DCD9F;
+  --color-secondary-content: #FFFFFF;
+  --color-accent: #1DCD9F45;
+  --color-accent-content: oklch(98% 0.01 160);
+  --color-neutral: #2D2D2D;
+  --color-neutral-content: #969696;
+  --color-info: #4B4B4B;
+  --color-info-content: oklch(98% 0.01 220);
+  --color-success: oklch(65% 0.25 140);
+  --color-success-content: oklch(98% 0.01 140);
+  --color-warning: oklch(80% 0.25 80);
+  --color-warning-content: oklch(20% 0.05 80);
+  --color-error: oklch(65% 0.3 30);
+  --color-error-content: oklch(98% 0.01 30);
+
+  /* border radius */
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+
+  /* base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* border size */
+  --border: 1px;
+
+  /* effects */
+  --depth: 1;
+  --noise: 0;
+}
 
 @theme inline {
     --font-heading: var(--font-sans);
@@ -49,8 +92,6 @@
 }
 
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.145 0 0);
     --popover: oklch(1 0 0);
@@ -81,6 +122,8 @@
     --sidebar-accent-foreground: oklch(0.205 0 0);
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.145 0 0);
 }
 
 .dark {
@@ -127,4 +170,8 @@
   html {
     @apply font-sans;
     }
+}
+
+body {
+  position: relative;
 }
