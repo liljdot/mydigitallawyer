@@ -47,13 +47,12 @@ const Header: React.FC = () => {
 
                         {/* show on mobile, hidden on desktop */}
                         <div className="flex md:hidden">
-                            <Drawer onOpenChange={setSandwichOpen} open={sandwichOpen} modal={false}>
+                            <Drawer swipeDirection="up" onOpenChange={setSandwichOpen}>
                                 <DrawerTrigger
-                                asChild
-                                    
-                                ><Button variant="ghost" className="btn-square btn text-base-content"></Button>
-                                    {/* <FiMenu className={`absolute size-6 ${sandwichOpen ? 'opacity-0 rotate-180' : 'opacity-100'} transition-all ease-in-out duration-700`}/>
-                                    <IoClose className={`absolute size-6 ${sandwichOpen ? 'opacity-100' : 'opacity-0 -rotate-180'} transition-all ease-in-out duration-500`} /> */}
+                                    render={<Button variant="ghost" />}
+                                >
+                                    <FiMenu className={`absolute size-6 ${sandwichOpen ? 'opacity-0 rotate-180' : 'opacity-100'} transition-all ease-in-out duration-700`} />
+                                    <IoClose className={`absolute size-6 ${sandwichOpen ? 'opacity-100' : 'opacity-0 -rotate-180'} transition-all ease-in-out duration-500`} />
                                 </DrawerTrigger>
                                 <DrawerContent className={`pt-14 ${inter.className}`}>
                                     <div className="flex flex-col py-12 bg-neutral text-base px-4.5 rounded-3xl">
