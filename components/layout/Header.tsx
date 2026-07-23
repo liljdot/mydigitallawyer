@@ -18,6 +18,7 @@ const inter = Inter({
 
 const Header: React.FC = () => {
     const [scrollY, setScrollY] = useState(0);
+    const [screenHeight, setScreenHeight] = useState(0);
     const [sandwichOpen, setSandwichOpen] = useState(false)
     const pathname = usePathname()
 
@@ -25,7 +26,8 @@ const Header: React.FC = () => {
         const listenerFn = () => {
             setScrollY(window.scrollY)
         }
-
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setScreenHeight(window.screen.height)
         window.addEventListener("scroll", listenerFn)
 
         return () => window.removeEventListener("scroll", listenerFn)
@@ -49,7 +51,7 @@ const Header: React.FC = () => {
                     {/* navbar end */}
                     <div className="flex-none self-end">
                         {/* hidden on mobile, show on desktop */}
-                        <ul className={`menu menu-horizontal hidden md:flex space-x-7.5 text-primary-content text-base font-semibold ${inter.className}`}>
+                        <ul className={`menu menu-horizontal hidden md:flex space-x-7.5 ${scrollY < screenHeight ? `text-primary-content` : "text-neutral-content"} text-base font-semibold ${inter.className} transition-all ease-in-out duration-500`}>
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/">Services</Link></li>
                             <li><Link href="/about">About</Link></li>
