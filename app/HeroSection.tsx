@@ -1,5 +1,6 @@
 import Image from "next/image";
 import heroImage from "@/public/assets/images/hero-image.png"
+import heroImageMobile from "@/public/assets/images/hero-image-mobile.png"
 import heroDeco from "@/public/assets/images/hero-section-deco.png"
 import floatie1 from "@/public/assets/images/hero-floatie-1.png"
 import floatie2 from "@/public/assets/images/hero-floatie-2.png"
@@ -32,12 +33,12 @@ const HeroSection: React.FC = () => {
     ]
 
     return (
-        <section className={`relative flex min-h-screen w-full ${openSans.className}`}>
+        <section className={`relative flex md:min-h-screen w-full ${openSans.className}`}>
             <HeroSectionImage />
             <HeroDeco />
-            <Section className="flex flex-col gap-10 mt-50">
-                <div className="card w-137 p-0">
-                    <div>
+            <Section className="flex flex-col gap-10 mt-20 md:mt-50">
+                <div className="card w-full md:w-137 p-0">
+                    <div className="hidden md:block">
                         <figure className="absolute w-fit h-fit -left-15 -top-20">
                             <Image
                                 alt="floatie"
@@ -61,21 +62,30 @@ const HeroSection: React.FC = () => {
                         </figure>
                     </div>
 
-                    <div className="card-body gap-12 p-0">
-                        <AncizarH6 className="text-neutral-content md:text-6xl font-semibold">
+                    <div className="card-body gap-6 md:gap-12 p-0">
+                        <AncizarH6 className="text-neutral-content text-2xl md:text-6xl font-semibold">
                             <span className="text-primary">Legal Solutions</span> for Modern Businesses, Creatives & Innovators
                         </AncizarH6>
-                        <p className="text-base text-justify opacity-60">
+
+                        <figure className="md:hidden">
+                            <Image
+                                src={heroImageMobile}
+                                alt="Shoes"
+                                className="w-full h-auto"
+                            />
+                        </figure>
+
+                        <p className="text-sm md:text-base text-center md:text-justify opacity-60 px-6 md:px-0">
                             Expert legal support for businesses, creatives, and innovators across Intellectual Property, Entertainment, technology, corporate, and more.
                         </p>
-                        <div className="justify-start card-actions">
-                            <Link href={"/contact"} className="btn btn-primary font-normal rounded-full">Book a Consultation</Link>
-                            <Link href={"/contact"} className="btn btn-neutral font-normal border border-primary rounded-full">Chat With Us</Link>
+                        <div className="items-center md:justify-start card-actions flex-col md:flex-row">
+                            <Link href={"/contact"} className="btn btn-primary text-sm md:text-base font-normal rounded-full">Book a Consultation</Link>
+                            <Link href={"/contact"} className="btn btn-neutral text-sm md:text-base font-normal border border-primary rounded-full">Chat With Us</Link>
                         </div>
                     </div>
                 </div>
 
-                <div className="flex flex-wrap justify-center w-103.5">
+                <div className="flex flex-wrap justify-center gap-6 md:w-103.5">
                     {achievements.map(a => (<AchievementCard achievement={a.achievement} stat={a.stat} key={a.achievement} />))}
                 </div>
             </Section>
@@ -86,7 +96,7 @@ const HeroSection: React.FC = () => {
 const HeroSectionImage: React.FC = () => {
 
     return (
-        <figure className="absolute h-full right-0">
+        <figure className="absolute hidden md:block h-full right-0">
             <Image
                 alt="female legal counsel"
                 src={heroImage}
@@ -99,7 +109,7 @@ const HeroSectionImage: React.FC = () => {
 
 const HeroDeco: React.FC = () => {
     return (
-        <figure className="absolute h-fit left-0 top-1/2 -translate-y-1/2">
+        <figure className="absolute hidden md:block h-fit left-0 top-1/2 -translate-y-1/2">
             <Image alt="female legal counsel" src={heroDeco} className="w-30 h-auto" />
         </figure>
     );
@@ -112,13 +122,13 @@ interface AchievementCardProps {
 
 const AchievementCard: React.FC<AchievementCardProps> = ({ stat, achievement }) => {
     return (
-        <div className="card w-fit px-6 py-4.5">
-            <div className="card-body gap-2 text-center p-0">
-                <h6 className="text-2xl text-primary font-semibold">
+        <div className="card w-fit items-center justify-center">
+            <div className="card-body md:gap-2 text-center p-0">
+                <h6 className="text-sm md:text-2xl text-primary font-semibold">
                     {stat}
                 </h6>
 
-                <p className="font-semibold opacity-60">
+                <p className="text-xs md:text-base font-semibold opacity-60">
                     {achievement}
                 </p>
             </div>

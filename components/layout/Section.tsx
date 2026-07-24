@@ -14,7 +14,7 @@ const Section: React.FC<Props> = ({
 
     return (
         <section
-            className={cn("md:px-30",
+            className={cn("px-5 md:px-30",
                 className
             )}
             {...props}
