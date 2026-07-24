@@ -1,6 +1,7 @@
 import { Ancizar_Serif, Open_Sans } from "next/font/google"
 import Image from "next/image"
 import Link from "next/link"
+import logoWhite from "@/public/assets/images/logo-white.png"
 import { AncizarH6 } from "../Typography"
 
 const aSerif = Ancizar_Serif({
@@ -19,34 +20,34 @@ const Footer: React.FC = () => {
 
     return (
         <>
-            <footer className={`footer sm:footer-horizontal gap-9 bg-primary text-base-content px-30 ${openSans.className}`}>
-                <aside className="w-135">
-                    <figure className="relative size-29">
+            <footer className={`footer md:footer-horizontal gap-9 bg-primary text-base-content px-5.5 md:px-30 ${openSans.className}`}>
+                <aside className="md:w-135 flex flex-col md:block items-center">
+                    <figure className="relative size-51 md:size-39">
                         <Image
                             alt="mdl logo"
-                            src="/assets/images/logo-white.png"
+                            src={logoWhite}
                             fill
                         />
                     </figure>
                     <div className="flex flex-col space-y-10">
-                        <h4 className={`text-4xl/15 font-semibold ${aSerif.className}`}>
+                        <h4 className={`self-center md:self-start max-w-79 md:max-w-full text-center md:text-left text-lg/6 md:text-4xl/15 font-semibold ${aSerif.className}`}>
                             Trusted By & Recognised For
                             Recognition. Expertise. Impact.
                         </h4>
 
                         <div>
-                            <AncizarH6 className="font-normal">
+                            <AncizarH6 className="text-center md:text-left text-lg/6 md:text-2xl font-normal">
                                 Let&apos;s Talk
                                 <br />
                                 Have a legal matter to discuss?
                             </AncizarH6>
 
-                            <p className="text-base">
-                                Our Team Is Ready To Provide Practical, Strategic Legal Guidance Tailored To Your Needs.
+                            <p className="text-sm/6 md:text-base text-center md:text-left mt-2 md:mt-0">
+                                Our Team Is Ready To Provide Practical, Strategic Legal Guidance Tailored To Your Specific Needs.
                             </p>
                         </div>
 
-                        <Link href={"/contact"} className="btn btn-neutral w-fit rounded-full text-neutral-content px-8 py-4">
+                        <Link href={"/contact"} className="btn btn-neutral w-fit self-center md:self-start rounded-full text-neutral-content md:px-8 md:py-4">
                             Book a Consultation
                         </Link>
                     </div>
