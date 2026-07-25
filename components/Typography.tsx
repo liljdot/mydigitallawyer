@@ -30,4 +30,24 @@ const AncizarH6: React.FC<ComponentProps<"h6">> = ({
     )
 }
 
-export { AncizarH6 }
+const AncizarH4: React.FC<ComponentProps<"h4">> = ({
+    className,
+    children,
+    ...props
+}) => {
+
+    return (
+        <h4
+            className={cn(
+                aSerif.className,
+                "text-2xl md:text-4xl",
+                className
+            )}
+            {...props}
+        >
+            {children}
+        </h4>
+    )
+}
+
+export { AncizarH6, AncizarH4 }
