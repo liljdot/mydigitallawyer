@@ -2,7 +2,7 @@ import Section from "@/components/layout/Section"
 import Image from "next/image";
 import insightImage from "@/public/assets/images/insight-image.png"
 import insightImageMobile from "@/public/assets/images/insight-image-mobile.png"
-import { AncizarH4, AncizarH6 } from "@/components/Typography";
+import { AncizarH4 } from "@/components/Typography";
 import { Open_Sans } from "next/font/google";
 
 const openSans = Open_Sans({
