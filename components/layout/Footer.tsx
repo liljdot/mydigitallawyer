@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
 
     return (
         <>
-            <footer className={`footer md:footer-horizontal gap-9 bg-primary text-base-content px-5.5 md:px-30 ${openSans.className}`}>
+            <footer className={`footer md:footer-horizontal gap-13  md:gap-9 bg-primary text-base-content px-5.5 md:px-30 ${openSans.className}`}>
                 <aside className="md:w-135 flex flex-col md:block items-center">
                     <figure className="relative size-51 md:size-39">
                         <Image
@@ -53,22 +53,31 @@ const Footer: React.FC = () => {
                     </div>
                 </aside>
 
-                <aside className="py-14">
-                    <div className="footer footer-horizontal gap-16">
+                <aside className="md:py-14 w-full md:w-auto gap-20">
+                    <div className="footer footer-horizontal justify-between md:gap-16">
                         <nav className="space-y-9">
                             <AncizarH6 className="font-normal">
                                 Quick Links
                             </AncizarH6>
-                            <ul className="flex flex-col space-y-4">
+                            <ul className="flex flex-col text-sm md:text-base space-y-4">
                                 <a className="link link-hover">Branding</a>
                                 <a className="link link-hover">Design</a>
                                 <a className="link link-hover">Marketing</a>
                                 <a className="link link-hover">Advertisement</a>
                             </ul>
-                            <div>
-                                <AncizarH6 className="font-normal">
-                                    Connect With Us
-                                </AncizarH6>
+                            <div className="hidden md:flex flex-col gap-9">
+                                <div>
+                                    <AncizarH6 className="font-normal">
+                                        Connect With Us
+                                    </AncizarH6>
+                                </div>
+
+                                <div>
+                                    <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">LinkedIn</Link>
+                                    <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Instagram</Link>
+                                    <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">X</Link>
+                                    <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Facebook</Link>
+                                </div>
                             </div>
                         </nav>
 
@@ -76,7 +85,7 @@ const Footer: React.FC = () => {
                             <AncizarH6 className="font-normal">
                                 Our Expertise
                             </AncizarH6>
-                            <ul className="flex flex-col space-y-4">
+                            <ul className="flex flex-col text-sm md:text-base space-y-4">
                                 <a className="link link-hover">Branding</a>
                                 <a className="link link-hover">Design</a>
                                 <a className="link link-hover">Marketing</a>
@@ -84,6 +93,21 @@ const Footer: React.FC = () => {
                             </ul>
                         </nav>
                     </div>
+                    <div className="flex md:hidden flex-col w-full items-center gap-9">
+                        <div>
+                            <AncizarH6 className="font-normal">
+                                Connect With Us
+                            </AncizarH6>
+                        </div>
+
+                        <div>
+                            <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">LinkedIn</Link>
+                            <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Instagram</Link>
+                            <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">X</Link>
+                            <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Facebook</Link>
+                        </div>
+                    </div>
+                    <p className="text-xs text-center md:text-left">© 2026 MyDigitalLawyer®️. All rights reserved. Privacy Policy · Terms of Use · Disclaimer</p>
                 </aside>
             </footer>
         </>
