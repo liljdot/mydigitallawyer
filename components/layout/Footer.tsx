@@ -20,8 +20,8 @@ const Footer: React.FC = () => {
 
     return (
         <>
-            <footer className={`footer md:footer-horizontal gap-13  md:gap-9 bg-primary text-base-content px-5.5 md:px-30 ${openSans.className}`}>
-                <aside className="md:w-135 flex flex-col md:block items-center">
+            <footer className={`footer lg:footer-horizontal gap-13  md:gap-9 bg-primary text-base-content px-5.5 md:px-30 ${openSans.className}`}>
+                <aside className="lg:w-135 flex flex-col md:block items-center">
                     <figure className="relative size-51 md:size-39">
                         <Image
                             alt="mdl logo"
