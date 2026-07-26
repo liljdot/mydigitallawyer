@@ -1,6 +1,7 @@
 import ExpertiseSection from "./ExpertiseSextion";
 import HeroSection from "./HeroSection";
 import InsightSection from "./InsightSection";
+import PeopleSection from "./PeopleSection";
 import ProtectSection from "./ProtectSection";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <InsightSection />
       <ExpertiseSection />
       <ProtectSection />
+      <PeopleSection />
     </main>
   );
 }
