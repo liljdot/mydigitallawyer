@@ -1,8 +1,6 @@
 import Section from "@/components/layout/Section"
 import { Open_Sans } from "next/font/google";
-import Image from "next/image";
 import protectImage from "@/public/assets/images/protect-image.png"
-import { url } from "inspector";
 import { AncizarH4 } from "@/components/Typography";
 import Link from "next/link";
 
