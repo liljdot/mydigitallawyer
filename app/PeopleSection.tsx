@@ -6,6 +6,10 @@ import { StaticImageData } from "next/image";
 import { ComponentProps } from "react";
 import omotayoImage from "@/public/assets/images/omotayo-image.png"
 import harrisonImage from "@/public/assets/images/harrison-Image.png"
+import mosesImage from "@/public/assets/images/moses-image.png"
+import jesutImage from "@/public/assets/images/jesut-image.png"
+import bolajiImage from "@/public/assets/images/bolaji-image.png"
+import nkemImage from "@/public/assets/images/nkem-image.png"
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -33,6 +37,29 @@ const PeopleSection: React.FC = () => {
         }
     ]
 
+    const legalTeam: Attorney[] = [
+        {
+            image: mosesImage,
+            name: "Moses Malan",
+            title: "Technology Law Lead"
+        },
+        {
+            image: jesutImage,
+            name: "Jesutimileyin Adesanya",
+            title: "Litigation Lead"
+        },
+        {
+            image: bolajiImage,
+            name: "Bolaji Otitoju",
+            title: "Fashion Law Specialist"
+        },
+        {
+            image: nkemImage,
+            name: "Nkemjika Okoye",
+            title: "Business Law and Strategy"
+        }
+    ]
+
     return (
         <Section className={`${openSans.className} gap-6 md:gap-10`}>
             <div className="flex flex-col gap-6 text-center md:text-left">
@@ -51,17 +78,26 @@ const PeopleSection: React.FC = () => {
                 </AncizarH5>
                 <AttorneyList list={leadership} />
             </div>
+
+            <div className="flex flex-col items-center gap-4 md:gap-6">
+                <AncizarH5>
+                    Legal Team
+                </AncizarH5>
+                <AttorneyList cardClassName="md:w-72 md:h-79" list={legalTeam} />
+            </div>
         </Section>
     )
 }
 
 interface AttorneyListProps extends ComponentProps<"div"> {
     list: Attorney[]
+    cardClassName?: string
 }
 
 const AttorneyList: React.FC<AttorneyListProps> = ({
     list,
     className,
+    cardClassName,
     ...props
 }) => {
 
@@ -72,19 +108,20 @@ const AttorneyList: React.FC<AttorneyListProps> = ({
         )}
             {...props}
         >
-            {list.map(a => (<AttorneyCard attorney={a} key={a.name} />))}
+            {list.map(a => (<AttorneyCard className={cardClassName} attorney={a} key={a.name} />))}
         </div>
     )
 }
 
 interface AttorneyCardProps {
     attorney: Attorney
+    className?: string
 }
 
-const AttorneyCard: React.FC<AttorneyCardProps> = ({ attorney }) => {
+const AttorneyCard: React.FC<AttorneyCardProps> = ({ attorney, className }) => {
 
     return (
-        <div className=" relative flex flex-col w-41 md:w-96 h-44 md:h-105 justify-end rounded-4xl overflow-clip" style={{ backgroundImage: `url(${attorney.image.src})`, backgroundSize: "100%", }}>
+        <div className={cn(" relative flex flex-col w-41 md:w-96 h-44 md:h-105 justify-end rounded-4xl overflow-clip", className)} style={{ backgroundImage: `url(${attorney.image.src})`, backgroundSize: "100%", }}>
             <div className="flex flex-col gap-2 md:mx-6 my-3 md:my-7 py-2 md:py-7 items-center bg-black/30 backdrop-blur-sm md:rounded-full z-3">
                 <AncizarH6 className="text-sm text-neutral">{attorney.name}</AncizarH6>
                 <p className="text-[10px] md:text-base text-neutral opacity-60">{attorney.title}</p>
