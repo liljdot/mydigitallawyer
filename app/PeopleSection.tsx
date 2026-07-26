@@ -10,6 +10,10 @@ import mosesImage from "@/public/assets/images/moses-image.png"
 import jesutImage from "@/public/assets/images/jesut-image.png"
 import bolajiImage from "@/public/assets/images/bolaji-image.png"
 import nkemImage from "@/public/assets/images/nkem-image.png"
+import bolaImage from "@/public/assets/images/bola-image.png"
+import ritaImage from "@/public/assets/images/rita-image.png"
+import davidImage from "@/public/assets/images/david-image.png"
+import zainabImage from "@/public/assets/images/zainab-image.png"
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -60,6 +64,29 @@ const PeopleSection: React.FC = () => {
         }
     ]
 
+    const bizOp: Attorney[] = [
+        {
+            image: bolaImage,
+            name: "Bola Okwu",
+            title: "Practice Manager"
+        },
+        {
+            image: ritaImage,
+            name: "Rita Ehianeta",
+            title: "Property & Real Estate Consultant"
+        },
+        {
+            image: davidImage,
+            name: "⁠David Agida",
+            title: "Accountant"
+        },
+        {
+            image: zainabImage,
+            name: "Zainab Shittu",
+            title: "Paralegal"
+        }
+    ]
+
     return (
         <Section className={`${openSans.className} gap-6 md:gap-10`}>
             <div className="flex flex-col gap-6 text-center md:text-left">
@@ -84,6 +111,13 @@ const PeopleSection: React.FC = () => {
                     Legal Team
                 </AncizarH5>
                 <AttorneyList cardClassName="md:w-72 md:h-79" list={legalTeam} />
+            </div>
+
+            <div className="flex flex-col items-center gap-4 md:gap-6">
+                <AncizarH5>
+                    Business and Operations
+                </AncizarH5>
+                <AttorneyList cardClassName="md:w-72 md:h-79" list={bizOp} />
             </div>
         </Section>
     )
@@ -124,7 +158,7 @@ const AttorneyCard: React.FC<AttorneyCardProps> = ({ attorney, className }) => {
         <div className={cn(" relative flex flex-col w-41 md:w-96 h-44 md:h-105 justify-end rounded-4xl overflow-clip", className)} style={{ backgroundImage: `url(${attorney.image.src})`, backgroundSize: "100%", }}>
             <div className="flex flex-col gap-2 md:mx-6 my-3 md:my-7 py-2 md:py-7 items-center bg-black/30 backdrop-blur-sm md:rounded-full z-3">
                 <AncizarH6 className="text-sm text-neutral">{attorney.name}</AncizarH6>
-                <p className="text-[10px] md:text-base text-neutral opacity-60">{attorney.title}</p>
+                <p className="text-[10px] md:text-base text-neutral text-center opacity-60">{attorney.title}</p>
             </div>
             <div className="w-full h-full absolute bg-linear-to-t from-black via-40% md:via-40% via-transparent to-transparent z-2" />
         </div>
