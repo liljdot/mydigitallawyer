@@ -44,7 +44,7 @@ const TrustedSection: React.FC = () => {
 
                         <div className="text-neutral-content opacity-60 text-sm md:text-base/6 font-normal">
                             Our work is grounded in legal excellence, specialist expertise, and a commitment to shaping conversations that matter. From intellectual property and digital rights to innovation and thought leadership, MyDigitalLawyer®️ continues to earn recognition while serving clients across Nigeria and internationally.
-
+                            <br /><br />
                             Recognition that reflects our expertise. Impact that extends beyond the law.
                         </div>
                     </div>
