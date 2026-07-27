@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import InsightSection from "./InsightSection";
 import PeopleSection from "./PeopleSection";
 import ProtectSection from "./ProtectSection";
+import TestimonialsSection from "./TestimonialsSection";
 import TrustedSection from "./TrustedSection";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <PeopleSection />
       <TrustedSection />
       <ClientsSection />
+      <TestimonialsSection />
     </main>
   );
 }
