@@ -1,5 +1,6 @@
 import Section from "@/components/layout/Section";
 import { AncizarH4, AncizarH5, AncizarH6 } from "@/components/Typography";
+import { Separator } from "@/components/ui";
 import { Open_Sans } from "next/font/google";
 
 const openSans = Open_Sans({
@@ -11,8 +12,8 @@ const openSans = Open_Sans({
 const ExpertiseSection: React.FC = () => {
 
     return (
-        <Section className={`${openSans.className}`}>
-            <div className="flex flex-col gap-6 md:gap-10">
+        <Section className={`${openSans.className} bg-base-100 md:bg-neutral`}>
+            <div className="flex flex-col bg-base-100 gap-6 md:gap-10">
                 <div className="flex flex-col gap-6 text-center md:text-left md:px-14 md:py-10">
                     <AncizarH4 className="text-primary md:text-neutral-content">
                         Our Areas of Deep Expertise
@@ -52,6 +53,8 @@ const ExpertiseSection: React.FC = () => {
                             These three areas form the foundation of our practice and reflect our commitment to supporting innovation, creativity, and digital transformation.
                         </p>
                     </div>
+
+                    <Separator  className={"border-3 border-accent rounded-full"}/>
                 </div>
             </div>
         </Section>

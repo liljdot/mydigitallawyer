@@ -11,8 +11,8 @@ const openSans = Open_Sans({
 const ApproachSection: React.FC = () => {
 
     return (
-        <Section className={`${openSans.className}`}>
-            <div className="flex flex-col gap-6 md:gap-10">
+        <Section className={`${openSans.className} bg-base-100 md:bg-neutral`}>
+            <div className="flex flex-col md:bg-base-100 gap-6 md:gap-10">
                 <div className="flex flex-col gap-6 text-center md:text-left md:px-14 md:py-10">
                     <AncizarH4 className="text-primary md:text-neutral-content">
                         Our Approach

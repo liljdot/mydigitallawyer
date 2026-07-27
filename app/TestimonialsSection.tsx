@@ -86,7 +86,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 
     return (
         <div className={cn(
-            "flex flex-col w-4/5 shrink-0 md:w-[calc((100%-2.5rem)/2)] gap-1.5 md:gap-10 px-4 py-6",
+            "flex flex-col w-4/5 bg-base-100 shrink-0 md:w-[calc((100%-2.5rem)/2)] gap-1.5 md:gap-10 px-4 py-6",
             className
         )}
             {...props}
