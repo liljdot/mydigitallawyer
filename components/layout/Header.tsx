@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import { usePathname } from "next/navigation";
+import { CHAT_LINK } from "@/app/data";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -53,7 +54,7 @@ const Header: React.FC = () => {
                             <li><Link href="/">Services</Link></li>
                             <li><Link href="/about">About</Link></li>
                             <li>
-                                <Link href="/" className="btn btn-primary text-primary-content rounded-full"><PiPhoneLight className="size-6" />Contact Us</Link>
+                                <Link href={CHAT_LINK} className="btn btn-primary text-primary-content rounded-full"><PiPhoneLight className="size-6" />Contact Us</Link>
                             </li>
                         </ul>
 
@@ -71,7 +72,7 @@ const Header: React.FC = () => {
                                         <ul className="flex flex-col text-neutral-content space-y-11">
                                             <li><Link href={"/"}>Home</Link></li>
                                             <li><Link href={"/about"}>About</Link></li>
-                                            <li className="flex justify-center"><Link href={"/contact"} className="btn btn-primary w-full text-primary-content rounded-full">Contact Us</Link></li>
+                                            <li className="flex justify-center"><Link href={CHAT_LINK} className="btn btn-primary w-full text-primary-content rounded-full">Contact Us</Link></li>
                                         </ul>
                                     </div>
                                 </DrawerContent>
