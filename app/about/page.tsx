@@ -1,5 +1,6 @@
 import AboutSection from "./AboutSection";
 import ApproachSection from "./ApproachSection";
+import ExperienceSection from "./ExperienceSection";
 import ExpertiseSection from "./ExpertiseSection";
 import ProactiveSection from "./ProactiveSection";
 
@@ -11,6 +12,7 @@ const About: React.FC = () => {
             <ApproachSection />
             <ProactiveSection />
             <ExpertiseSection />
+            <ExperienceSection />
         </main>
     )
 }
