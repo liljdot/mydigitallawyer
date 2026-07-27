@@ -3,6 +3,7 @@ import ApproachSection from "./ApproachSection";
 import ExperienceSection from "./ExperienceSection";
 import ExpertiseSection from "./ExpertiseSection";
 import ProactiveSection from "./ProactiveSection";
+import ReachSection from "./ReachSection";
 
 const About: React.FC = () => {
 
@@ -13,6 +14,7 @@ const About: React.FC = () => {
             <ProactiveSection />
             <ExpertiseSection />
             <ExperienceSection />
+            <ReachSection />
         </main>
     )
 }
