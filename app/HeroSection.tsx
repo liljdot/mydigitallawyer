@@ -9,6 +9,7 @@ import Section from "@/components/layout/Section";
 import { AncizarH6 } from "@/components/Typography";
 import { Open_Sans } from "next/font/google";
 import Link from "next/link";
+import { BOOKING_LINK, CHAT_LINK } from "./data";
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -63,7 +64,7 @@ const HeroSection: React.FC = () => {
                     </div>
 
                     <div className="card-body gap-6 md:gap-12 p-0">
-                        <AncizarH6 className="text-neutral-content text-2xl md:text-6xl font-semibold">
+                        <AncizarH6 className="text-neutral-content text-2xl md:text-6xl text-center md:text-left font-semibold">
                             <span className="text-primary">Legal Solutions</span> for Modern Businesses, Creatives & Innovators
                         </AncizarH6>
 
@@ -79,8 +80,8 @@ const HeroSection: React.FC = () => {
                             Expert legal support for businesses, creatives, and innovators across Intellectual Property, Entertainment, technology, corporate, and more.
                         </p>
                         <div className="items-center md:justify-start card-actions flex-col md:flex-row">
-                            <Link href={"/contact"} className="btn btn-primary text-sm md:text-base font-normal rounded-full">Book a Consultation</Link>
-                            <Link href={"/contact"} className="btn btn-neutral text-sm md:text-base font-normal border border-primary rounded-full">Chat With Us</Link>
+                            <Link href={BOOKING_LINK} className="btn btn-primary text-sm md:text-base font-normal rounded-full">Book a Consultation</Link>
+                            <Link href={CHAT_LINK} className="btn btn-neutral text-sm md:text-base font-normal border border-primary rounded-full">Chat With Us</Link>
                         </div>
                     </div>
                 </div>

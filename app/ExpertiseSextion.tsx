@@ -12,6 +12,7 @@ import briefcase from "@/public/assets/images/briefcase-icon.png"
 import scale from "@/public/assets/images/scale-icon.png"
 import speakingIcon from "@/public/assets/images/speaking-icon.png"
 import Image, { StaticImageData } from "next/image";
+import { BOOKING_LINK } from "./data";
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -90,7 +91,7 @@ const ExpertiseSection: React.FC = () => {
                     </p>
                 </div>
                 <div className="card-actions min-w-fit justify-center md:justify-start md:items-end">
-                    <Link href={""} className="btn btn-primary font-normal rounded-full">
+                    <Link href={BOOKING_LINK} className="btn btn-primary font-normal rounded-full">
                         Book a Consultation
                     </Link>
                 </div>

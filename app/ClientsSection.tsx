@@ -7,6 +7,7 @@ import clientImage1 from "@/public/assets/images/client-image-1.png"
 import clientImage2 from "@/public/assets/images/client-image-2.png"
 import clientImage3 from "@/public/assets/images/client-image-3.png"
 import clientImage4 from "@/public/assets/images/client-image-4.png"
+import { BOOKING_LINK } from "./data";
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -31,7 +32,7 @@ const ClientsSection: React.FC = () => {
                     </AncizarH4>
                 </div>
                 <div className="card-actions hidden md:flex min-w-fit justify-center md:justify-start md:items-start">
-                    <Link href={""} className="btn btn-primary font-normal rounded-full">
+                    <Link href={BOOKING_LINK} className="btn btn-primary font-normal rounded-full">
                         Book a Consultation
                     </Link>
                 </div>

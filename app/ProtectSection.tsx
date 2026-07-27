@@ -3,6 +3,7 @@ import { Open_Sans } from "next/font/google";
 import protectImage from "@/public/assets/images/protect-image.png"
 import { AncizarH4 } from "@/components/Typography";
 import Link from "next/link";
+import { BOOKING_LINK, CHAT_LINK } from "./data";
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -29,10 +30,10 @@ const ProtectSection: React.FC = () => {
                     </div>
 
                     <div className="card-actions flex-col md:flex-row items-center gap-4 w-fit">
-                        <Link href={"/"} className="btn btn-primary font-normal rounded-full">
+                        <Link href={BOOKING_LINK} className="btn btn-primary font-normal rounded-full">
                             Book a Consultation
                         </Link>
-                        <Link href={"/"} className="btn btn-black border border-neutral font-normal rounded-full">
+                        <Link href={CHAT_LINK} className="btn btn-black border border-neutral font-normal rounded-full">
                             Chat With Us
                         </Link>
                     </div>

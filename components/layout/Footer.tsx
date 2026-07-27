@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import logoWhite from "@/public/assets/images/logo-white.png"
 import { AncizarH6 } from "../Typography"
+import { BOOKING_LINK } from "@/app/data"
 
 const aSerif = Ancizar_Serif({
     variable: "--font-ancizar-serif",
@@ -47,7 +48,7 @@ const Footer: React.FC = () => {
                             </p>
                         </div>
 
-                        <Link href={"/contact"} className="btn btn-neutral w-fit self-center md:self-start rounded-full text-neutral-content md:px-8 md:py-4">
+                        <Link href={BOOKING_LINK} className="btn btn-neutral w-fit self-center md:self-start rounded-full text-neutral-content md:px-8 md:py-4">
                             Book a Consultation
                         </Link>
                     </div>
