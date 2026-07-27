@@ -10,6 +10,36 @@ const openSans = Open_Sans({
 })
 
 const ExpertiseSection: React.FC = () => {
+    const areaOfSpec: { title: string, text: string }[] = [
+        {
+            title: "Corporate Governance & Compliance ",
+            text: "— Helping businesses establish sound governance structures, meet regulatory obligations, and operate with greater legal clarity."
+        },
+        {
+            title: "Property & Real Estate Law ",
+            text: " — Providing practical legal support for property transactions, ownership matters, and real estate-related legal needs."
+        },
+        {
+            title: "Family Law ",
+            text: " — Offering trusted, discreet, and personalised legal guidance on family-related matters."
+        },
+        {
+            title: "Immigration Law ",
+            text: " — Supporting individuals, professionals, and businesses navigating immigration processes and legal requirements."
+        },
+        {
+            title: "Employment & Labour Law ",
+            text: " — Advising employers and employees on workplace matters, employment relationships, contracts, and labour related issues."
+        },
+        {
+            title: "General Practice & Litigation ",
+            text: " — Providing trusted legal counsel and representation across a broad range of legal matters, including dispute resolution and litigation."
+        },
+        {
+            title: "Mentorship, Training & Public Speaking ",
+            text: " — Sharing legal insight, industry knowledge, and practical guidance through mentorship, training, speaking engagements, and thought leadership."
+        }
+    ]
 
     return (
         <Section className={`${openSans.className} bg-base-100 md:bg-neutral`}>
@@ -54,10 +84,36 @@ const ExpertiseSection: React.FC = () => {
                         </p>
                     </div>
 
-                    <Separator  className={"border-3 border-accent rounded-full"}/>
+                    <Separator className={"border-3 border-accent rounded-full"} />
+
+                    <div className="flex flex-col gap-6 md:gap-10 text-left">
+                        <AncizarH4 className="text-primary md:text-neutral-content text-center md:text-left">
+                            Our Practice Areas
+                        </AncizarH4>
+
+                        <AncizarH6 className="md:text-lg">
+                            In addition to our specialist expertise, MyDigitalLawyer®️ provides comprehensive legal services across:
+                        </AncizarH6>
+
+                        <ul className="list-disc text-neutral-content opacity-60 text-sm md:text-base/8 font-normal px-4">
+                            {areaOfSpec.map(a => (<ListItem area={a} key={a.title} />))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </Section>
+    )
+}
+
+const ListItem: React.FC<{ area: { title: string, text: string } }> = ({ area }) => {
+
+    return (
+        <li>
+            <span>
+                <AncizarH6 className="inline text-sm md:text-base/8 font-semibold">{area.title}</AncizarH6>
+            </span>
+            {area.text}
+        </li>
     )
 }
 
