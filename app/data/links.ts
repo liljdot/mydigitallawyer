@@ -1,2 +1,5 @@
 export const CHAT_LINK: string = "https://wa.me/message/KFM7GVZWFNKZN1"
 export const BOOKING_LINK: string = "https://calendly.com/mydigitallawyer/new-meeting"
+export const YT_LINK: string = "https://youtube.com/channel/UC0U9masVN4OJTSvYEPVHcpw"
+export const IG_LINK: string = "https://www.instagram.com/invites/contact/?i=7cy4g2noqgim&utm_content=5rqfd3f"
+export const X_LINK: string = "https://twitter.com/mydigitallawyer/status/1561994866367815681?s=21&t=ibOOd6UzsT0qxJpJBeV_hA"

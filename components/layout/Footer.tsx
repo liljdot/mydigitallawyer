@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import logoWhite from "@/public/assets/images/logo-white.png"
 import { AncizarH6 } from "../Typography"
-import { BOOKING_LINK, CHAT_LINK } from "@/app/data"
+import { BOOKING_LINK, CHAT_LINK, IG_LINK, X_LINK, YT_LINK } from "@/app/data"
 
 const aSerif = Ancizar_Serif({
     variable: "--font-ancizar-serif",
@@ -77,9 +77,9 @@ const Footer: React.FC = () => {
                                 </div>
 
                                 <div>
-                                    <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Youtube</Link>
-                                    <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Instagram</Link>
-                                    <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">X</Link>
+                                    <Link href={YT_LINK} className="after:content-['·'] after:mx-2 last:after:content-['']">Youtube</Link>
+                                    <Link href={IG_LINK} className="after:content-['·'] after:mx-2 last:after:content-['']">Instagram</Link>
+                                    <Link href={X_LINK} className="after:content-['·'] after:mx-2 last:after:content-['']">X</Link>
                                 </div>
                             </div>
                         </nav>
@@ -104,9 +104,9 @@ const Footer: React.FC = () => {
                         </div>
 
                         <div>
-                            <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">YouTube</Link>
-                            <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Instagram</Link>
-                            <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">X</Link>
+                            <Link href={YT_LINK} className="after:content-['·'] after:mx-2 last:after:content-['']">YouTube</Link>
+                            <Link href={IG_LINK} className="after:content-['·'] after:mx-2 last:after:content-['']">Instagram</Link>
+                            <Link href={X_LINK} className="after:content-['·'] after:mx-2 last:after:content-['']">X</Link>
                         </div>
                     </div>
                     <p className="text-xs text-center md:text-left">© 2026 MyDigitalLawyer®️. All rights reserved. Privacy Policy · Terms of Use · Disclaimer</p>
