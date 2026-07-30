@@ -10,6 +10,7 @@ import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import { usePathname } from "next/navigation";
 import { CHAT_LINK } from "@/app/data";
+import logo from "@/public/assets/images/logo.png"
 
 const inter = Inter({
     variable: "--font-inter",
@@ -34,20 +35,20 @@ const Header: React.FC = () => {
     return (
         <>
             <header className={`fixed flex w-full z-52 ${sandwichOpen ? "bg-neutral" : scrollY < 50 ? "bg-transparent" : "bg-neutral/70 backdrop-blur-xs"} transition-all ease-in-out duration-300`}>
-                <div className="navbar px-5 md:px-25">
+                <div className="navbar py-0 px-5 md:px-25">
                     {/* navbar start */}
                     <div className="flex-1">
-                        <Link href="/" className="block relative w-15 md:w-38 h-11 md:h-29">
+                        <Link href="/" className="block relative">
                             <Image
                                 alt="mdl logo"
-                                src="/assets/images/logo.png"
-                                fill
+                                src={logo}
+                                className="w-15 md:w-38 h-15 md:h-38"
                             />
                         </Link>
                     </div>
 
                     {/* navbar end */}
-                    <div className="flex-none self-end">
+                    <div className="flex-none">
                         {/* hidden on mobile, show on desktop */}
                         <ul className={`menu menu-horizontal hidden md:flex space-x-7.5 ${scrollY < 50 ? `text-primary-content` : "text-neutral-content"} text-base font-semibold ${inter.className} transition-all ease-in-out duration-500`}>
                             <li><Link href="/">Home</Link></li>
