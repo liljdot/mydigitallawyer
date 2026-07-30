@@ -20,12 +20,12 @@ const TestimonialsSection: React.FC = () => {
     const testimonials: TestimonialForCard[] = [
         {
             quote: "What I appreciate most is the way you take the time to go through things properly. Your advice has helped me make better decisions and understand the importance of protecting my interests from the beginning.",
-            nameTitle: "Zion - Music Artiste",
+            nameTitle: "Joel Psalms - Music Artiste",
             className: "md:w-[calc((100%-5rem)/4)]"
         },
         {
             quote: "I am so grateful for your guidance and support. You made the legal process feel much clearer and easier to navigate, and I always felt like my concerns were genuinely understood.",
-            nameTitle: "Boniface - Entrepreneur",
+            nameTitle: "Dr Jane Akpamgbo - Music Business Investor",
             className: "md:w-[calc((100%-5rem)/4)]"
         },
         {
@@ -38,8 +38,8 @@ const TestimonialsSection: React.FC = () => {
             nameTitle: "Zadok - Music Artist"
         },
         {
-            quote: "I am so glad we went through the agreement together and included a clause that allowed me to request updates and receive information about the project completion dates. When I noticed I hadn't heard back from them as expected, I knew exactly what to do and acted immediately. Thank you so much for your advice.",
-            nameTitle: "Greg - Creative Professional"
+            quote: "I am definitely happy to refer you to other persons because you really delivered on your promise. I enjoyed working with you and you are very transparent and skillful.",
+            nameTitle: "Chief Olabode Akeem"
         }
     ]
 
