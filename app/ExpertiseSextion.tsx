@@ -24,6 +24,7 @@ interface Expertise {
     area: string
     text: string
     icon: StaticImageData
+    id: string
 }
 
 const ExpertiseSection: React.FC = () => {
@@ -31,17 +32,20 @@ const ExpertiseSection: React.FC = () => {
         {
             area: "Intellectual Property Law",
             icon: lightbulb,
-            text: "We help creatives, businesses, and innovators protect, manage, and commercialise their intellectual assets, including brand identities , creative works, and other valuable IP rights."
+            text: "We help creatives, businesses, and innovators protect, manage, and commercialise their intellectual assets, including brand identities , creative works, and other valuable IP rights.",
+            id: "ip-law"
         },
         {
             area: "Media & Entertainment Law",
             icon: playIcon,
-            text: "Strategic legal support for the entertainment industry, covering artists, record labels, producers, filmmakers, and other creative professionals navigating contracts, intellectual property rights, and commercial opportunities."
+            text: "Strategic legal support for the entertainment industry, covering artists, record labels, producers, filmmakers, and other creative professionals navigating contracts, intellectual property rights, and commercial opportunities.",
+            id: "media-law"
         },
         {
             area: "Technology Law",
             icon: techIcon,
-            text: "Legal guidance for technology-driven businesses, startups, and innovators navigating digital products, technology transactions, intellectual property, and emerging legal risks."
+            text: "Legal guidance for technology-driven businesses, startups, and innovators navigating digital products, technology transactions, intellectual property, and emerging legal risks.",
+            id: "tech-law"
         }
     ]
 
@@ -49,32 +53,38 @@ const ExpertiseSection: React.FC = () => {
         {
             area: "Corporate Governance & Compliance",
             icon: buildingIcon,
-            text: "Helping businesses establish sound governance structures, meet regulatory obligations, and operate with greater legal clarity and confidence."
+            text: "Helping businesses establish sound governance structures, meet regulatory obligations, and operate with greater legal clarity and confidence.",
+            id: "corporate-law"
         },
         {
             area: "Property & Family Law",
             icon: peopleIcon,
-            text: "Practical legal support for property transactions, ownership matters, and family-related legal needs, wills, testamentory needs and grants of probates- all delivered with discretion and a personalised approach"
+            text: "Practical legal support for property transactions, ownership matters, and family-related legal needs, wills, testamentory needs and grants of probates- all delivered with discretion and a personalised approach",
+            id: "family-law"
         },
         {
             area: "Immigration Law",
             icon: world,
-            text: "Strategic legal guidance for individuals, professionals, and businesses navigating immigration processes and related legal requirements."
+            text: "Strategic legal guidance for individuals, professionals, and businesses navigating immigration processes and related legal requirements.",
+            id: "immigration-law"
         },
         {
             area: "Employment & Labour Law",
             icon: briefcase,
-            text: "Supporting employers and employees with legal guidance on workplace matters, employment relationships, contracts, and labour-related issues."
+            text: "Supporting employers and employees with legal guidance on workplace matters, employment relationships, contracts, and labour-related issues.",
+            id: "labour-law"
         },
         {
             area: "General Practice & Litigation",
             icon: scale,
-            text: "Trusted legal counsel and representation across a broad range of legal matters, including dispute resolution and litigation where necessary."
+            text: "Trusted legal counsel and representation across a broad range of legal matters, including dispute resolution and litigation where necessary.",
+            id: "litigation"
         },
         {
             area: "Mentorship & Public Speaking",
             icon: speakingIcon,
-            text: "Sharing legal insights, industry knowledge, and practical guidance through mentorship, speaking engagements, and thought leadership."
+            text: "Sharing legal insights, industry knowledge, and practical guidance through mentorship, speaking engagements, and thought leadership.",
+            id: "mentorship"
         }
     ]
 
@@ -130,6 +140,7 @@ const ExpertiseList: React.FC<ExpertiseListProps> = ({ list }) => {
                     icon={e.icon}
                     text={e.text}
                     key={e.area}
+                    id={e.id}
                 />
             ))}
         </div>
@@ -139,11 +150,12 @@ const ExpertiseList: React.FC<ExpertiseListProps> = ({ list }) => {
 const ExpertiseCard: React.FC<Expertise> = ({
     area,
     icon,
-    text
+    text,
+    id
 }) => {
 
     return (
-        <div className="card w-full sm:w-72 md:w-96 gap-10 rounded-none shadow-2xl px-8 py-10">
+        <div className="card w-full sm:w-72 md:w-96 gap-10 rounded-none shadow-2xl px-8 py-10" id={id}>
             <figure className="">
                 <Image
                     alt="icon"

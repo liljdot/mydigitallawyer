@@ -89,10 +89,13 @@ const Footer: React.FC = () => {
                                 Our Expertise
                             </AncizarH6>
                             <ul className="flex flex-col text-sm md:text-base space-y-4">
-                                <Link href={""} className="link link-hover">Branding</Link>
-                                <Link href={""} className="link link-hover">Design</Link>
-                                <Link href={""} className="link link-hover">Marketing</Link>
-                                <Link href={""} className="link link-hover">Advertisement</Link>
+                                <Link href={"/#ip-law"} className="link link-hover">Intellectual Property Law</Link>
+                                <Link href={"/#media-law"} className="link link-hover">Media & Entertainment Law</Link>
+                                <Link href={"/#tech-law"} className="link link-hover">Technology Law</Link>
+                                <Link href={"/#corporate-law"} className="link link-hover">Corporate Governance & Compliance</Link>
+                                <Link href={"/#family-law"} className="link link-hover">Property & Real Estate Law</Link>
+                                <Link href={"/#family-law"} className="link link-hover">Family Law</Link>
+                                <Link href={"/#immigration-law"} className="link link-hover">Immigration Law</Link>
                             </ul>
                         </nav>
                     </div>
