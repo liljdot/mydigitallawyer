@@ -36,10 +36,10 @@ const InsightSection: React.FC = () => {
                         MyDigitalLawyer®️ is a modern, client-focused law practice providing sophisticated legal solutions for businesses, creatives, individuals, and brands worldwide.
                         <br />
                         <br />
-                        Led by Omotayo Alemeru Abiode, International Entertainment Lawyer, our practice combines deep legal expertise with a commercially minded approach to help clients protect what matters, navigate complexity, and move forward with confidence.
+                        Led by Omotayo Alemeru Abiode, an award-winning International Entertainment and Intellectual Property Lawyer with over 12 years of experience(this my no of years too should be added to the  other part that has experienced legal professionals), our practice combines deep legal expertise with a commercially minded approach — helping clients protect what matters, navigate complexity, and move forward with confidence.
                         <br />
                         <br />
-                        With WIPO and Harvard Law-certified Intellectual Property expertise, MyDigitalLawyer®️ is trusted by record labels, Nollywood producers, tech startups, and DGN executives.
+                        Backed by international certifications from World Intellectual Property Organization (WIPO) and Harvard Law, MDL®️(please asides the first part every other place use MDL®️ instead of Mydigitallawyer ®️ accross board) is trusted by record labels, Nollywood producers, tech startups, and creative and business executives across Africa and beyond.
                         <br />
                         <br />
                         Founded to bridge the gap between legal expertise and real-world ambition, we take a highly personalised approach to every matter. Our advice is tailored to each client&apos;s unique goals, challenges, and aspirations—delivering legal support that is practical, strategic, and results-driven.
