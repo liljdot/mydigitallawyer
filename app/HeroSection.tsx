@@ -125,9 +125,9 @@ const AchievementCard: React.FC<AchievementCardProps> = ({ stat, achievement }) 
     return (
         <div className="card w-fit items-center justify-center">
             <div className="card-body md:gap-2 text-center p-0">
-                <h6 className="text-sm md:text-2xl text-primary font-semibold">
+                <h1 className="text-sm md:text-2xl text-primary font-semibold">
                     {stat}
-                </h6>
+                </h1>
 
                 <p className="text-xs md:text-base font-semibold opacity-60">
                     {achievement}
