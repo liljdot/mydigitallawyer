@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                         {/* hidden on mobile, show on desktop */}
                         <ul className={`menu menu-horizontal hidden md:flex space-x-7.5 ${scrollY < 50 ? `text-primary-content` : "text-neutral-content"} text-base font-semibold ${inter.className} transition-all ease-in-out duration-500`}>
                             <li><Link href="/">Home</Link></li>
-                            <li><Link href="/">Services</Link></li>
+                            <li><Link href="/#services">Services</Link></li>
                             <li><Link href="/about">About</Link></li>
                             <li>
                                 <Link href={CHAT_LINK} className="btn btn-primary text-primary-content rounded-full"><PiPhoneLight className="size-6" />Contact Us</Link>

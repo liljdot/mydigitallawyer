@@ -79,7 +79,7 @@ const ExpertiseSection: React.FC = () => {
     ]
 
     return (
-        <Section className={`${openSans.className} gap-16`}>
+        <Section className={`${openSans.className} gap-16`} id="services">
             <div className="card md:card-side gap-6 md:gap-26">
                 <div className="card-body gap-6 text-center md:text-left p-0">
                     <AncizarH4 className="text-primary">
