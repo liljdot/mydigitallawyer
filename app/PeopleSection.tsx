@@ -88,7 +88,7 @@ const PeopleSection: React.FC = () => {
     ]
 
     return (
-        <Section className={`${openSans.className} gap-6 md:gap-10`}>
+        <Section className={`${openSans.className} gap-6 md:gap-10`} id="team">
             <div className="flex flex-col gap-6 text-center md:text-left">
                 <AncizarH4 className="text-primary">
                     The People Behind the Practice

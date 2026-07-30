@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import logoWhite from "@/public/assets/images/logo-white.png"
 import { AncizarH6 } from "../Typography"
-import { BOOKING_LINK } from "@/app/data"
+import { BOOKING_LINK, CHAT_LINK } from "@/app/data"
 
 const aSerif = Ancizar_Serif({
     variable: "--font-ancizar-serif",
@@ -61,10 +61,13 @@ const Footer: React.FC = () => {
                                 Quick Links
                             </AncizarH6>
                             <ul className="flex flex-col text-sm md:text-base space-y-4">
-                                <a className="link link-hover">Branding</a>
-                                <a className="link link-hover">Design</a>
-                                <a className="link link-hover">Marketing</a>
-                                <a className="link link-hover">Advertisement</a>
+                                <Link href={"/#hero"} className="link link-hover">Home</Link>
+                                <Link href={"/about"} className="link link-hover">About Us</Link>
+                                <Link href={"/#services"} className="link link-hover">Our Services</Link>
+                                <Link href={"/#team"} className="link link-hover">Our Team</Link>
+                                <Link href={"/#clients"} className="link link-hover">Our Clients</Link>
+                                <Link href={"/"} className="link link-hover">Our Policy</Link>
+                                <Link href={CHAT_LINK} className="link link-hover">Contact Us</Link>
                             </ul>
                             <div className="hidden md:flex flex-col gap-9">
                                 <div>
@@ -74,10 +77,9 @@ const Footer: React.FC = () => {
                                 </div>
 
                                 <div>
-                                    <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">LinkedIn</Link>
+                                    <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Youtube</Link>
                                     <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Instagram</Link>
                                     <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">X</Link>
-                                    <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Facebook</Link>
                                 </div>
                             </div>
                         </nav>
@@ -87,10 +89,10 @@ const Footer: React.FC = () => {
                                 Our Expertise
                             </AncizarH6>
                             <ul className="flex flex-col text-sm md:text-base space-y-4">
-                                <a className="link link-hover">Branding</a>
-                                <a className="link link-hover">Design</a>
-                                <a className="link link-hover">Marketing</a>
-                                <a className="link link-hover">Advertisement</a>
+                                <Link href={""} className="link link-hover">Branding</Link>
+                                <Link href={""} className="link link-hover">Design</Link>
+                                <Link href={""} className="link link-hover">Marketing</Link>
+                                <Link href={""} className="link link-hover">Advertisement</Link>
                             </ul>
                         </nav>
                     </div>
@@ -102,10 +104,9 @@ const Footer: React.FC = () => {
                         </div>
 
                         <div>
-                            <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">LinkedIn</Link>
+                            <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">YouTube</Link>
                             <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Instagram</Link>
                             <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">X</Link>
-                            <Link href={""} className="after:content-['·'] after:mx-2 last:after:content-['']">Facebook</Link>
                         </div>
                     </div>
                     <p className="text-xs text-center md:text-left">© 2026 MyDigitalLawyer®️. All rights reserved. Privacy Policy · Terms of Use · Disclaimer</p>
