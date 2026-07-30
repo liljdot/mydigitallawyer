@@ -44,7 +44,7 @@ const ClientsSection: React.FC = () => {
                 </AncizarH5>
 
                 <div className="text-neutral-content opacity-60 text-sm md:text-base/6 font-normal">
-                    From ambitious entrepreneurs and innovative startups to creatives, corporate organisations, and individuals, MyDigitalLawyer®️ works with clients navigating complex legal needs and bold opportunities.
+                    With a growing client base within Nigeria and across the globe including but not limited to the United Kingdom, United States, China, Saudi Arabia and Canada MyDigitalLawyer®️ continues to provide trusted, strategic legal counsel to clients in a digitally evolving world.
                     <br /><br />
                     We are trusted by record labels, Nollywood producers, tech startups, DGN executives, businesses, and clients across Nigeria and internationally.
                 </div>
