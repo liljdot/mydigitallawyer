@@ -24,8 +24,8 @@ const HeroSection: React.FC = () => {
             achievement: "Years of Leadership"
         },
         {
-            stat: "3+",
-            achievement: "Areas of Deep Expertise"
+            stat: "7+",
+            achievement: "Areas of Expertise"
         },
         {
             stat: "45+",
