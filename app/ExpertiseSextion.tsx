@@ -31,12 +31,12 @@ const ExpertiseSection: React.FC = () => {
         {
             area: "Intellectual Property Law",
             icon: lightbulb,
-            text: "We help creatives, businesses, and innovators protect, manage, and commercialise their intellectual assets, including brands, creative works, and other valuable IP rights."
+            text: "We help creatives, businesses, and innovators protect, manage, and commercialise their intellectual assets, including brand identities , creative works, and other valuable IP rights."
         },
         {
             area: "Media & Entertainment Law",
             icon: playIcon,
-            text: "Strategic legal support for the entertainment industry, covering artists, record labels, producers, filmmakers, and other creative professionals navigating contracts, rights, and commercial opportunities."
+            text: "Strategic legal support for the entertainment industry, covering artists, record labels, producers, filmmakers, and other creative professionals navigating contracts, intellectual property rights, and commercial opportunities."
         },
         {
             area: "Technology Law",
@@ -54,7 +54,7 @@ const ExpertiseSection: React.FC = () => {
         {
             area: "Property & Family Law",
             icon: peopleIcon,
-            text: "Practical legal support for property transactions, ownership matters, and family-related legal needs, delivered with discretion and a personalised approach."
+            text: "Practical legal support for property transactions, ownership matters, and family-related legal needs, wills, testamentory needs and grants of probates- all delivered with discretion and a personalised approach"
         },
         {
             area: "Immigration Law",
@@ -74,7 +74,7 @@ const ExpertiseSection: React.FC = () => {
         {
             area: "Mentorship & Public Speaking",
             icon: speakingIcon,
-            text: "Sharing legal insight, industry knowledge, and practical guidance through mentorship, speaking engagements, and thought leadership."
+            text: "Sharing legal insights, industry knowledge, and practical guidance through mentorship, speaking engagements, and thought leadership."
         }
     ]
 
@@ -107,7 +107,7 @@ const ExpertiseSection: React.FC = () => {
 
             <div className="flex flex-col gap-10">
                 <AncizarH5 className="text-center">
-                    General Practice Areas
+                    Other Practice Areas
                 </AncizarH5>
 
                 <ExpertiseList list={generalExpertise} />
