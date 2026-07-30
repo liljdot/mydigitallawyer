@@ -6,7 +6,7 @@ import floatie1 from "@/public/assets/images/hero-floatie-1.png"
 import floatie2 from "@/public/assets/images/hero-floatie-2.png"
 import floatie3 from "@/public/assets/images/hero-floatie-3.png"
 import Section from "@/components/layout/Section";
-import { AncizarH6 } from "@/components/Typography";
+import { AncizarH1, AncizarH6 } from "@/components/Typography";
 import { Open_Sans } from "next/font/google";
 import Link from "next/link";
 import { BOOKING_LINK, CHAT_LINK } from "./data";
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
     ]
 
     return (
-        <section className={`relative flex md:min-h-screen w-full ${openSans.className}`}>
+        <section className={`relative flex md:min-h-screen w-full #hero ${openSans.className}`}>
             <HeroSectionImage />
             <HeroDeco />
             <Section className="flex flex-col gap-10 mt-20 md:mt-50">
@@ -64,9 +64,9 @@ const HeroSection: React.FC = () => {
                     </div>
 
                     <div className="card-body gap-6 md:gap-12 p-0">
-                        <AncizarH6 className="text-neutral-content text-2xl md:text-6xl text-center md:text-left font-semibold">
+                        <AncizarH1 className="text-neutral-content text-center md:text-left font-semibold">
                             <span className="text-primary">Legal Solutions</span> for Modern Businesses, Creatives & Innovators
-                        </AncizarH6>
+                        </AncizarH1>
 
                         <figure className="md:hidden">
                             <Image
