@@ -78,7 +78,7 @@ const PeopleSection: React.FC = () => {
         {
             image: davidImage,
             name: "⁠David Agida",
-            title: "Accountant"
+            title: "Paralegal"
         },
         {
             image: zainabImage,
