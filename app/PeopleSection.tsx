@@ -13,7 +13,7 @@ import nkemImage from "@/public/assets/images/nkem-image.png"
 import bolaImage from "@/public/assets/images/bola-image.png"
 import ritaImage from "@/public/assets/images/rita-image.png"
 import davidImage from "@/public/assets/images/david-image.png"
-import zainabImage from "@/public/assets/images/zainab-image.png"
+import ukwaImage from "@/public/assets/images/ukwa-image.png"
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -81,9 +81,9 @@ const PeopleSection: React.FC = () => {
             title: "Paralegal"
         },
         {
-            image: zainabImage,
-            name: "Zainab Shittu",
-            title: "Paralegal"
+            image: ukwaImage,
+            name: "Ukwa Ukwa",
+            title: "Accountant"
         }
     ]
 
