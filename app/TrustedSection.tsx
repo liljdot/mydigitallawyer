@@ -16,7 +16,9 @@ const TrustedSection: React.FC = () => {
         <Section className={`${openSans.className} gap-6 md:gap-10`}>
             <div className="flex flex-col max-w-4xl gap-6 text-center md:text-left">
                 <AncizarH4 className="text-primary">
-                    Trusted & Recognised For <br /> Recognition. Expertise. Impact.
+                    Trusted & Recognised For
+                    <br />
+                    Expertise and Impact
                 </AncizarH4>
 
                 <p className="text-neutral-content opacity-60 text-sm md:text-base/6 font-normal">
