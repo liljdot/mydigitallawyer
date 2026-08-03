@@ -21,7 +21,7 @@ const ExperienceSection: React.FC = () => {
                     </AncizarH4>
 
                     <p className="text-neutral-content opacity-60 text-sm md:text-base/8 font-normal">
-                        MyDigitalLawyer®️ is led by Omotayo Abiode, a lawyer with over 12 years of legal practice and a wealth of experience across modern and commercially relevant areas of law.
+                        MDL®️ is led by Omotayo Abiode, a lawyer with over 12 years of legal practice and a wealth of experience across modern and commercially relevant areas of law.
                         <br /> We also collaborate with a carefully selected network of experienced legal professionals whose combined legal experience spans over 45 years.
                         <br /> Together, our collective expertise extends across Intellectual Property, Media & Entertainment, Technology, Corporate Governance, Employment, Property, Immigration, Litigation, and Commercial Law.
                         <br /> This collaborative approach allows us to bring the right expertise to each matter while maintaining the personalised attention, responsiveness, and quality of service that define our practice.
