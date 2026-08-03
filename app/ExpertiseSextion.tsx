@@ -97,7 +97,7 @@ const ExpertiseSection: React.FC = () => {
                     </AncizarH4>
 
                     <p className="text-neutral-content opacity-60 text-base/6 font-normal">
-                        At MyDigitalLawyer®️, we offer focused legal expertise and strategic counsel across industries, businesses, and individual needs. Our practice is built around a deep understanding of modern legal challenges and a commitment to delivering practical, commercially sound solutions.
+                        At MDL®️, we offer focused legal expertise and strategic counsel across industries, businesses, and individual needs. Our practice is built around a deep understanding of modern legal challenges and a commitment to delivering practical, commercially sound solutions.
                     </p>
                 </div>
                 <div className="card-actions min-w-fit justify-center md:justify-start md:items-end">
