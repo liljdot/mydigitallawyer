@@ -21,7 +21,7 @@ const ApproachSection: React.FC = () => {
                     </AncizarH4>
 
                     <p className="text-neutral-content opacity-60 text-sm md:text-base/8 font-normal">
-                        At MyDigitalLawyer®️, people come first.
+                        At MDL®️, people come first.
                         <br /><br />
                         We believe the best legal solutions begin with listening. Before offering legal advice, we take the time to understand your story, your objectives, your business, and the challenges you face. Every client deserves to be heard, understood, and treated with respect.
                         Whether you work directly with our Lead Consultant or another lawyer within our professional network, you can expect a personalised service built on empathy, professionalism, and trust.
