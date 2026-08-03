@@ -92,7 +92,7 @@ const ExpertiseSection: React.FC = () => {
                         </AncizarH4>
 
                         <AncizarH6 className="md:text-lg">
-                            In addition to our specialist expertise, MyDigitalLawyer®️ provides comprehensive legal services across:
+                            In addition to our specialist expertise, MDL®️ provides comprehensive legal services across:
                         </AncizarH6>
 
                         <ul className="list-disc text-neutral-content opacity-60 text-sm md:text-base/8 font-normal px-4">
