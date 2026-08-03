@@ -22,7 +22,7 @@ const TrustedSection: React.FC = () => {
                 </AncizarH4>
 
                 <p className="text-neutral-content opacity-60 text-sm md:text-base/6 font-normal">
-                    At MyDigitalLawyer®️, our work is shaped by a commitment to legal excellence, thought leadership, and meaningful contributions to innovation and digital rights.
+                    At MDL®️, our work is shaped by a commitment to legal excellence, thought leadership, and meaningful contributions to innovation and digital rights.
                 </p>
             </div>
 
