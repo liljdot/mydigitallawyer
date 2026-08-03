@@ -21,7 +21,7 @@ const CommitmentSection: React.FC = () => {
                     </AncizarH4>
 
                     <p className="text-neutral-content opacity-60 text-sm md:text-base/8 font-normal">
-                        At MyDigitalLawyer®️, we are committed to helping our clients build confidently, create boldly, and grow securely. Whether you need to protect your intellectual property, structure your business, negotiate a commercial agreement, maintain regulatory compliance, resolve a dispute, or simply obtain trusted legal advice, we are here to provide practical legal solutions tailored to your needs.
+                        At MDL®️, we are committed to helping our clients build confidently, create boldly, and grow securely. Whether you need to protect your intellectual property, structure your business, negotiate a commercial agreement, maintain regulatory compliance, resolve a dispute, or simply obtain trusted legal advice, we are here to provide practical legal solutions tailored to your needs.
                         <br />
                         <br />
                         We are more than legal advisers.
