@@ -77,7 +77,7 @@ const HeroSection: React.FC = () => {
                         </figure>
 
                         <p className="text-sm md:text-base text-center md:text-justify opacity-60 px-6 md:px-0">
-                            Expert legal support for businesses, creatives, and innovators across Intellectual Property, Entertainment, technology, corporate, and more.
+                            Expert Legal Support For Businesses, Creatives, and Innovators Across Intellectual Property, Entertainment, Technology, Corporate, and More.
                         </p>
                         <div className="items-center md:justify-start card-actions flex-col md:flex-row">
                             <Link href={BOOKING_LINK} className="btn btn-primary text-sm md:text-base font-normal rounded-full">Book a Consultation</Link>
