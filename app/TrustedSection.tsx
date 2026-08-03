@@ -45,7 +45,7 @@ const TrustedSection: React.FC = () => {
                         </AncizarH5>
 
                         <div className="text-neutral-content opacity-60 text-sm md:text-base/6 font-normal">
-                            Our work is grounded in legal excellence, specialist expertise, and a commitment to shaping conversations that matter. From intellectual property and digital rights to innovation and thought leadership, MyDigitalLawyer®️ continues to earn recognition while serving clients across Nigeria and internationally.
+                            Our work is grounded in legal excellence, specialist expertise, and a commitment to shaping conversations that matter. From intellectual property and digital rights to innovation and thought leadership, MDL®️ continues to earn recognition while serving clients across Nigeria and internationally.
                             <br /><br />
                             Recognition that reflects our expertise. Impact that extends beyond the law.
                         </div>
@@ -53,7 +53,7 @@ const TrustedSection: React.FC = () => {
                 </div>
 
                 <div className="text-neutral-content opacity-60 text-center md:text-left text-sm md:text-base/6 font-normal">
-                    With a growing client base across Nigeria and internationally—including the United Kingdom, United States, and Canada—MyDigitalLawyer®️ continues to provide trusted, strategic legal counsel to clients navigating a rapidly evolving world.
+                    With a growing client base across Nigeria and internationally—including the United Kingdom, United States, and Canada—MDL®️ continues to provide trusted, strategic legal counsel to clients navigating a rapidly evolving world.
                 </div>
             </div>
         </Section>
