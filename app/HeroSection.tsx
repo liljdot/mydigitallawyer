@@ -6,7 +6,7 @@ import floatie1 from "@/public/assets/images/hero-floatie-1.png"
 import floatie2 from "@/public/assets/images/hero-floatie-2.png"
 import floatie3 from "@/public/assets/images/hero-floatie-3.png"
 import Section from "@/components/layout/Section";
-import { AncizarH1, AncizarH6 } from "@/components/Typography";
+import { AncizarH1 } from "@/components/Typography";
 import { Open_Sans } from "next/font/google";
 import Link from "next/link";
 import { BOOKING_LINK, CHAT_LINK } from "./data";
