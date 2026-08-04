@@ -1,5 +1,6 @@
 import ClientsSection from "./ClientsSection";
 import ExpertiseSection from "./ExpertiseSextion";
+import FAQSection from "./FAQSection";
 import HeroSection from "./HeroSection";
 import InsightSection from "./InsightSection";
 import PeopleSection from "./PeopleSection";
@@ -18,6 +19,7 @@ export default function Home() {
       <TrustedSection />
       <ClientsSection />
       <TestimonialsSection />
+      <FAQSection />
     </main>
   );
 }
