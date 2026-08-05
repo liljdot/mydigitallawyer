@@ -494,7 +494,7 @@ const Footer: React.FC = () => {
                     </figure>
                     <div className="flex flex-col space-y-10">
                         <h4 className={`self-center md:self-start max-w-79 md:max-w-full text-center md:text-left text-lg/6 md:text-4xl/15 font-semibold ${aSerif.className}`}>
-                            Do you have a specific matter that needs claritiy?
+                            Do you have a specific matter that needs clarity?
                         </h4>
 
                         <div>
