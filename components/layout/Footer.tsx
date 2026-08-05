@@ -6,6 +6,7 @@ import { AncizarH4, AncizarH6 } from "../Typography"
 import { BOOKING_LINK, CHAT_LINK, IG_LINK, X_LINK, YT_LINK } from "@/app/data"
 import DialogOrDrawer from "../ui/DialogOrDrawer"
 import { ReactNode } from "react"
+import { cn } from "@/lib/utils"
 
 const aSerif = Ancizar_Serif({
     variable: "--font-ancizar-serif",
@@ -493,15 +494,12 @@ const Footer: React.FC = () => {
                     </figure>
                     <div className="flex flex-col space-y-10">
                         <h4 className={`self-center md:self-start max-w-79 md:max-w-full text-center md:text-left text-lg/6 md:text-4xl/15 font-semibold ${aSerif.className}`}>
-                            Trusted By & Recognised For
-                            Recognition. Expertise. Impact.
+                            Do you have a specific matter that needs claritiy?
                         </h4>
 
                         <div>
                             <AncizarH6 className="text-center md:text-left text-lg/6 md:text-2xl font-normal">
-                                Let&apos;s Talk
-                                <br />
-                                Have a legal matter to discuss?
+                                Are you looking for legal counsel to answer your specific questions.
                             </AncizarH6>
 
                             <p className="text-sm/6 md:text-base text-center md:text-left mt-2 md:mt-0">
@@ -573,10 +571,24 @@ const Footer: React.FC = () => {
                             <Link href={X_LINK} className="after:content-['·'] after:mx-2 last:after:content-['']">X</Link>
                         </div>
                     </div>
-                    <p className="text-xs text-center md:text-left">© 2026 MyDigitalLawyer®️. All rights reserved. <DialogOrDrawer className={"md:top-1/2 md:-translate-y-1/2 md:w-[92vw] md:h-[90vh] md:max-w-350 flex-col p-0 overflow-scroll scroll-smooth"} content={ppContent}>Privacy Policy · Terms of Use · Disclaimer</DialogOrDrawer></p>
+                    <p className="text-xs text-center md:text-left">© 2026 MyDigitalLawyer®️. All rights reserved. <LegalPopup content={ppContent}>Privacy Policy · Terms of Use · Disclaimer</LegalPopup></p>
                 </aside>
             </footer>
         </>
+    )
+}
+
+interface LegalPopupProps {
+    children: ReactNode
+    content: ReactNode
+    className?: string
+}
+
+const LegalPopup: React.FC<LegalPopupProps> = ({ children, content, className }) => {
+    return (
+        <DialogOrDrawer className={cn(`md:top-1/2 md:-translate-y-1/2 md:w-[92vw] md:h-[90vh] md:max-w-350 flex-col p-0 overflow-scroll scroll-smooth`, className)} content={content}>
+            {children}
+        </DialogOrDrawer>
     )
 }
 
