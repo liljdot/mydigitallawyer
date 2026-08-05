@@ -28,7 +28,7 @@ const FAQSection: React.FC = () => {
         },
         {
             question: "How long does it take to process my brief?",
-            answer: (<p>We are fast paced. As a general guide: <br /> Searches: 2 to 3 working days <br /> Registrations: 5 to 7 working days <br /> Contracts and policy drafts: 3 to 7 working days <br /> Other briefs may vary. Your invoice will always carry the confirmed timeline for your specific matter, and that takes precedence</p>)
+            answer: (<>We are fast paced. As a general guide: <br /> Searches: 2 to 3 working days <br /> Registrations: 5 to 7 working days <br /> Contracts and policy drafts: 3 to 7 working days <br /> Other briefs may vary. Your invoice will always carry the confirmed timeline for your specific matter, and that takes precedence</>)
         },
         {
             question: "Do you work with clients outside Nigeria?",

@@ -527,7 +527,7 @@ const Footer: React.FC = () => {
                                 <Link href={"/#services"} className="link link-hover">Our Services</Link>
                                 <Link href={"/#team"} className="link link-hover">Our Team</Link>
                                 <Link href={"/#clients"} className="link link-hover">Our Clients</Link>
-                                <Link href={"/"} className="link link-hover">Our Policy</Link>
+                                <DialogOrDrawer className={"md:top-1/2 md:-translate-y-1/2 md:w-[92vw] md:h-[90vh] md:max-w-350 flex-col p-0 overflow-scroll scroll-smooth"} content={ppContent}><a className="link link-hover"> Our Policy</a></DialogOrDrawer>
                                 <Link href={CHAT_LINK} className="link link-hover">Contact Us</Link>
                             </ul>
                             <div className="hidden md:flex flex-col gap-9">
