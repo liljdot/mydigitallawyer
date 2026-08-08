@@ -11,7 +11,7 @@ import jesutImage from "@/public/assets/images/jesut-image.png"
 import bolajiImage from "@/public/assets/images/bolaji-image.png"
 import nkemImage from "@/public/assets/images/nkem-image.png"
 import bolaImage from "@/public/assets/images/bola-image.png"
-import ritaImage from "@/public/assets/images/rita-image.png"
+import stephenImage from "@/public/assets/images/stephen-image.png"
 import davidImage from "@/public/assets/images/david-image.png"
 import ukwaImage from "@/public/assets/images/ukwa-image.png"
 
@@ -71,8 +71,8 @@ const PeopleSection: React.FC = () => {
             title: "Practice Manager"
         },
         {
-            image: ritaImage,
-            name: "Rita Ehianeta",
+            image: stephenImage,
+            name: "Stephen Odutola",
             title: "Property & Real Estate Consultant"
         },
         {
@@ -156,7 +156,7 @@ const AttorneyCard: React.FC<AttorneyCardProps> = ({ attorney, className }) => {
 
     return (
         <div className={cn(" relative flex flex-col w-41 md:w-96 h-44 md:h-105 justify-end rounded-4xl overflow-clip", className)} style={{ backgroundImage: `url(${attorney.image.src})`, backgroundSize: "100%", }}>
-            <div className="flex flex-col gap-2 md:mx-6 my-3 md:my-7 py-2 md:py-7 items-center bg-black/30 backdrop-blur-sm md:rounded-full z-3">
+            <div className="flex flex-col md:h-21 gap-2 md:mx-6 my-3 md:my-7 py-2 md:py-0 justify-center items-center bg-black/30 backdrop-blur-sm md:rounded-full z-3">
                 <AncizarH6 className="text-sm text-neutral">{attorney.name}</AncizarH6>
                 <p className="text-[10px] md:text-base text-neutral text-center opacity-60">{attorney.title}</p>
             </div>
