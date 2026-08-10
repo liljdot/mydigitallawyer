@@ -36,7 +36,7 @@ const PeopleSection: React.FC = () => {
         },
         {
             image: harrisonImage,
-            name: "Harrison Ehimen",
+            name: "Harrison Abiode",
             title: "Business Director"
         }
     ]
