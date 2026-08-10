@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "My Digital Lawyer",
-  description: "Your Legal Assistant, everywhere you need it.",
+  description: "Expert Legal Support For Businesses, Creatives, and Innovators Across Intellectual Property, Entertainment, Technology, Corporate, and More.",
 };
 
 export default function RootLayout({
