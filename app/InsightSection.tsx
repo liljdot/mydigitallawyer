@@ -33,7 +33,7 @@ const InsightSection: React.FC = () => {
                         Legal Insight. Strategic Protection. Global Ambition.
                     </AncizarH4>
                     <p className="text-neutral-content opacity-60 text-base/6 font-normal">
-                        MyDigitalLawyer®️ is a modern, client-focused law practice providing sophisticated legal solutions for businesses, creatives, individuals, and brands worldwide.
+                        MyDigitalLawyer is a modern, client-focused law practice providing sophisticated legal solutions for businesses, creatives, individuals, and brands worldwide.
                         <br />
                         <br />
                         Led by Omotayo Alemeru Abiode, an award-winning International Entertainment and Intellectual Property Lawyer with over 12 years of experience, our practice combines deep legal expertise with a commercially minded approach — helping clients protect what matters, navigate complexity, and move forward with confidence.
