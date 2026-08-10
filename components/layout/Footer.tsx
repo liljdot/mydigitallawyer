@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
             <header className="border-b bg-background px-8 md:px-15 pt-6 md:pt-25">
                 <div className="flex flex-col gap-4">
                     <AncizarH4 className="text-primary text-center md:text-left">
-                        MyDigitalLawyer®️ Website Legal Policies
+                        MDL®️ Website Legal Policies
                     </AncizarH4>
                     <AncizarH6 className="mt-1 text-sm text-center md:text-left">
                         <Link href="#disclaimer">Disclaimer</Link> · <Link href="#terms">Terms and Conditions</Link> · <Link href="#privacy">Privacy Policy</Link> · <Link href="#refund">Refund Policy</Link>
